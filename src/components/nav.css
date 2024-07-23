@@ -1,0 +1,21 @@
+
+.navbar-container{
+    height: 5rem;
+    background-color: darkslategray;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    font-size: 4rem;
+    z-index: 999;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 0.2rem;
+    align-items: center;
+}
+
+.navbar-container li{
+    color: cadetblue;
+    list-style: none;
+    margin-left: 8rem;
+}

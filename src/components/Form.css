@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border-bottom: 2px solid black; */
+    display: grid;
+    /* margin-left: 4rem; */
+    margin: 9rem 10rem 0rem 10rem;
+    /* width: 90%; */
+    text-align: start;
+    /* justify-content: ; */
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    /* grid-gap: 2rem 4rem; */
+    height: 30vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form div{
+    flex-wrap: wrap;
+}
+.form .buttons{
+    justify-content: flex-end;
+    /* width: 95%; */
+    /* margin: 1rem 0.5rem; */
+}
+.buttons{
+    display: flex;
+    height: 4rem;
+    padding-right: 10rem;
+    /* border: 2px solid beige; */
+}
+
+
+.buttons button{
+    padding: 0.3rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 139, 139);
+}
+.buttons button:hover{
+    color: black;
+    transition-duration: 300ms;
+    background-color: aquamarine;
+}
+.buttons button:active{
+    background-color: rgba(0,0,0,0);
+}
+
+.container label{
+    font-size: larger;
+    display: block;
+    margin-left: 1rem;
+}
+.container legend{
+    font-size: larger;
+    margin-left: 1rem;
+}
+.container input{
+    height: 2rem;
+    margin-left: 0.5rem;
+    width: 23rem;
+    border-radius: 0.5rem;
+    border: 0.6px solid black;
+    padding: 0.6rem;
+    
+}
+.container input:hover{
+    background-color: rgb(208, 233, 233);
+    transition-duration: 900ms;
+}
+.container textarea:hover{
+    background-color: rgb(208, 233, 233);
+    transition-duration: 900ms;
+}
+.container select:hover{
+    background-color: rgb(208, 233, 233);
+    transition-duration: 900ms;
+}
+
+.container select{
+    height: 2rem;
+    margin-left: 0.5rem;
+    width: 23rem;
+    border-radius: 0.5rem;
+    border: 0.6px solid black;
+    padding: 0.6rem;
+}
+.address label{
+    display: block;
+
+}
+.address {
+    padding-right: 0.5rem;
+}
+.container textarea{
+    height: 2rem;
+    /* margin-left: 0.5rem; */
+    resize: none;
+    margin-left: 0.5rem;
+    width: 100%;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.6px solid black;
+    padding: 0.4rem;
+}
+
+.container select{
+    font-size: x-small;
+    background-color: white;
+    font-weight: bolder;
+}
+select option{
+    color:rgb(127, 201, 201);
+    background-color:rgb(243, 243, 243);
+}
+select option{
+    font-size: medium;
+}
+  
+.error-message {
+    color: red; /* Red color for error messages */
+    font-size: large; /* Adjust font size as needed */
+    text-align: end;
+}
+.container span {
+    color: #e74c3c;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 1rem;
+    text-align: start;
+    display: block;
+}
+.error-border{
+    border: 2px solid red !important;
+}
+.country label{
+    margin-right: 15rem;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+.country div{
+    margin-left: 1rem;
+    font-size: x-large;
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+.country input{
+    margin-left: 1rem;
+    vertical-align: top;
+    width: 1rem;
+}
+.address{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(3, 134, 134);
+    padding: 2rem;
+    width: 70%;
+    margin: 7rem auto 0rem auto;
+    border-radius: 0.5rem;
+    height: 45vh;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.486); /* Add shadow for depth */
+    z-index: 1001; /* Ensure it's above the overlay */
+}
+.edit-container{
+    display: grid;
+    /* margin-left: 4rem; */
+    
+    /* width: 90%; */
+    text-align: start;
+    /* justify-content: ; */
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    grid-gap: 2rem 4rem;
+    height: 30vh;
+}
+.edit-container label{
+    font-size: larger;
+    display: block;
+    margin-left: 1rem;
+}
+.edit-container legend{
+    font-size: larger;
+    margin-left: 1rem;
+}
+.edit-container input{
+    height: 2.4rem;
+    margin-left: 0.5rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    border: 0.6px solid black;
+    padding: 0.6rem;
+    
+}
+.edit-container input:hover{
+    background-color: rgb(208, 233, 233);
+    transition-duration: 900ms;
+}
+.edit-container textarea:hover{
+    background-color: rgb(208, 233, 233);
+    transition-duration: 900ms;
+}
+.deit-container select:hover{
+    background-color: rgb(208, 233, 233);
+    transition-duration: 900ms;
+}
+
+.edit-container select{
+    height: 2.4rem;
+    margin-left: 0.5rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    border: 0.6px solid black;
+    padding: 0.6rem;
+}
+
+.edit-container select{
+    font-size: x-small;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.edit-container textarea{
+    height: 2.4rem;
+    /* margin-left: 0.5rem; */
+    resize: none;
+    margin-left: 0.5rem;
+    width: 100%;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.6px solid black;
+    padding: 0.4rem;
+}
+
+.edit-container span {
+    color: #e74c3c;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 1rem;
+    text-align: start;
+    display: block;
+}
+
+
+.edit-container .country input{
+    width: 1.6rem;
+}
+
+.edit-container .country label{
+    margin: 0.2rem 0;
+    margin-left: 1rem;
+}
+.edit-container .country div{
+    height: 2rem;
+    margin-right: 0.4rem;
+}
+
+
+.edit-form .buttons{
+    justify-content: flex-end;
+    padding-right: 0rem;
+    
+    /* width: 95%; */
+    /* margin: 1rem 0.5rem; */
+}
+.edit-form .buttons button{
+    background-color: rgb(21, 57, 58);
+}
+.edit-form .buttons button:hover{
+    background-color: rgb(92, 220, 224);
+}
+
+
+@media screen and (max-width: 1800px){
+    .container{
+        width: 70%;
+        margin: 9rem 6rem 0rem 5rem;
+        transition: 1000ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .container {
+        margin: 9rem 5rem 0rem 5rem;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        height: 50vh;
+        transition: ease-in-out 1000ms;
+    }
+    .address{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .form,
+    .edit-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons {
+        padding-right: 5rem;
+    }
+
+    .country label {
+        margin-right: 5rem;
+    }
+
+    .edit-form .buttons {
+        padding-right: 5.65rem;
+    }
+    div{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .container{
+        display: flex;
+        height: 110vh;
+        transition: ease-in-out 1000ms;
+    }
+    .container textarea{
+        width: 23rem;
+        height: 2rem;
+    }
+    .buttons{
+        display: flex;
+    }
+    .form, .edit-form{
+        display: flex;
+    }
+    .container{
+        width: 10%;
+    }
+    .country div{
+        width: 23rem;
+    }
+    div{
+        margin-bottom: 2rem;
+    }
+    
+}
+
+/* .{
+    background-color: rgb(0, 0, 0);
+} */
+.overlay-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.79); /* Semi-transparent black background */
+    z-index: 10001; /* Ensure it's above other content */
+}

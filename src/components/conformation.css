@@ -1,0 +1,68 @@
+.confirmation-modal {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.confirmation-modal.open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} */
+
+.button-modal{
+    display: flex;
+    background-color: rgb(3, 134, 134);
+    flex-direction: column;
+    border-radius: 3rem;
+    width: 23rem;
+    justify-content: center;
+    box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.486);
+    align-items: center;
+    height: 8rem;
+}
+
+.button-modal button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    margin: 0.4rem 0.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(21, 57, 58);
+}
+
+.button-modal button:hover{
+    color: black;
+    transition-duration: 300ms;
+    background-color: aquamarine;
+}
+
+.overlay-confirm-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.79); /* Semi-transparent black background */
+    z-index: 10001; /* Ensure it's above other content */
+}
